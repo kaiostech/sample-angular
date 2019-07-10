@@ -1,0 +1,9 @@
+<div class="todos">
+  <span
+    nav-selectable
+    *ngFor="let todo of todos"
+    [class.completed]="todo.completed"
+  >
+    {{ todo.name }}
+  </span>
+</div>

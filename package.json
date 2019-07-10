@@ -1,13 +1,18 @@
 {
   "name": "my-first-angular-app-kaios",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "app:install": "kdeploy build install",
+    "app:uninstall": "kdeploy build uninstall",
+    "app:update": "kdeploy build update",
+    "app:start": "kdeploy build start",
+    "app:stop": "kdeploy build stop"
   },
   "private": true,
   "dependencies": {
@@ -42,6 +47,7 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.4.3"
+    "typescript": "~3.4.3",
+    "kdeploy": "kaiostech/kdeploy"
   }
 }
